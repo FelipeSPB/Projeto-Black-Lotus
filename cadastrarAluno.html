@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pacifico|Roboto+Slab:400,700" rel="stylesheet">
+		<!-- O normalize está em primeiro pela hierarquia, se estivesse em segundo algumas classes dele substituiriam a do estilo.css -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/estilo.css">
+		<!-- Definindo o Favicon-->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+		<!-- Tag Viewport-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/login.js" defer async charset="utf-8"></script>
+    <title>Cadastro de Alunos| Faculdade Impacta de Tecnologia</title>
+</head>
+<body>
+        <nav>
+                <a href="index.html"><img src="img/logo.jpg" class="logo" alt=""></a>
+                <ul>
+                    <li><a href="GradeCursos.html">Cursos</a></li>
+                    <li><a class="#servicos" href="novo_curso.html">Novo Curso</a></li>
+                    <li><a href="nova_disciplina.html">Nova Disciplina</a></li>
+                    <li><a href="cadastrarAluno.html">Novo Aluno</a></li>
+              			<li><a href="matricula.html">Matrículas</a></li>
+                    <li><a class="btn-login" href="login.html">LOGIN</a></li>
+                </ul>
+            </nav>
+
+<section id="sobreTitulo">
+  <div class="center">
+
+    <h1>Cadastro de Novos Alunos </h1>
+
+    <form id="formulario" action="/recebe" method="POST">
+        <label for="">
+          <input type="text" id="login" placeholder="Login"class="campoCadastro" >
+        </label>
+
+        <label for="">
+          <input type="text" id="nome" placeholder="Nome"class="campoCadastro">
+        </label>
+
+        <label for="">
+          <input type="email"id="email"placeholder="E-Mail"class="campoCadastro">
+        </label>
+
+        <label for "">
+          <input type="text" id="celular" placeholder="Celular"class="campoCadastro">
+        </label>
+
+        <label for="">
+            <input type="text" id="nascimento" placeholder="Data de Nascimento"class="campoCadastro" >
+        </label>
+
+        <label for="">
+          <input type="text" id="cpf" placeholder="CPF" class="campoCadastro" >
+        </label>
+
+        <!--Partten faz a verificação da senha -->
+        <label for="">
+          <input type="text" id="senha" pattern="(?=.*\d)(?=.*[a-z]).{2,}" placeholder="Senha" class="campoCadastro" >
+        </label>
+        <label for="">
+          <input type="text" id="confSenha" placeholder="Confirmar Senha" class="campoCadastro" >
+        </label>
+        <label for="">
+          <input type="submit" class="btn-login2"  value="Enviar">
+        </label>
+    </form>
+  </div>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato conosco</p>
+    <div>
+      <img src="img/fone.png" alt="fone">
+      <p><a href="tel:xx5555-5555">(11) 3254-8300</a></p>
+    </div>
+    <div>
+      <img src="img/contato.png" alt="e-mail">
+      <p><a href="mailto:teste@gmail.com">contato@impacta.com.br</a></p>
+    </div>
+  </section>
+  <footer>
+    <p style="font-size: 12px;">Projeto LMS by Black Lotus, 2018</p>
+  </footer>
+</body>
+</html>
