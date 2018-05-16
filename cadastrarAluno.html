@@ -19,11 +19,9 @@
         <nav>
                 <a href="index.html"><img src="img/logo.jpg" class="logo" alt=""></a>
                 <ul>
-                    <li><a href="GradeCursos.html">Cursos</a></li>
-                    <li><a class="#servicos" href="novo_curso.html">Novo Curso</a></li>
-                    <li><a href="nova_disciplina.html">Nova Disciplina</a></li>
-                    <li><a href="cadastrarAluno.html">Novo Aluno</a></li>
-              			<li><a href="matricula.html">Matrículas</a></li>
+                    <li><a href="Home_prof.html">Área Do Professor</a></li>
+                    <li><a href="Atividade.html">Atividades</a></li>
+                    <li><a class="#servicos" href="cadastrarAluno.html">Cadastro Aluno</a></li>
                     <li><a class="btn-login" href="login.html">LOGIN</a></li>
                 </ul>
             </nav>
@@ -35,15 +33,15 @@
 
     <form id="formulario" action="/recebe" method="POST">
         <label for="">
-          <input type="text" id="login" placeholder="Login"class="campoCadastro" >
-        </label>
-
-        <label for="">
           <input type="text" id="nome" placeholder="Nome"class="campoCadastro">
         </label>
 
         <label for="">
-          <input type="email"id="email"placeholder="E-Mail"class="campoCadastro">
+          <input type="text" id="idade" placeholder="Idade"class="campoCadastro">
+        </label>
+
+        <label for="">
+          <input type="text"id="curso"placeholder="Curso"class="campoCadastro">
         </label>
 
         <label for "">
@@ -51,39 +49,16 @@
         </label>
 
         <label for="">
-            <input type="text" id="nascimento" placeholder="Data de Nascimento"class="campoCadastro" >
+          <input type="e-mail"id="email"placeholder="E-Mail"class="campoCadastro">
         </label>
 
-        <label for="">
-          <input type="text" id="cpf" placeholder="CPF" class="campoCadastro" >
-        </label>
 
-        <!--Partten faz a verificação da senha -->
-        <label for="">
-          <input type="text" id="senha" pattern="(?=.*\d)(?=.*[a-z]).{2,}" placeholder="Senha" class="campoCadastro" >
-        </label>
-        <label for="">
-          <input type="text" id="confSenha" placeholder="Confirmar Senha" class="campoCadastro" >
-        </label>
         <label for="">
           <input type="submit" class="btn-login2"  value="Enviar">
         </label>
     </form>
   </div>
 </section>
-
-<section id="contato">
-    <h2>Contato</h2>
-    <p>Entre em contato conosco</p>
-    <div>
-      <img src="img/fone.png" alt="fone">
-      <p><a href="tel:xx5555-5555">(11) 3254-8300</a></p>
-    </div>
-    <div>
-      <img src="img/contato.png" alt="e-mail">
-      <p><a href="mailto:teste@gmail.com">contato@impacta.com.br</a></p>
-    </div>
-  </section>
   <footer>
     <p style="font-size: 12px;">Projeto LMS by Black Lotus, 2018</p>
   </footer>
