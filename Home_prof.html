@@ -1,0 +1,89 @@
+<DOCTYPE <!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pacifico|Roboto+Slab:400,700" rel="stylesheet">
+		<!-- O normalize está em primeiro pela hierarquia, se estivesse em segundo algumas classes dele substituiriam a do estilo.css -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/estilo.css">
+		<!-- Definindo o Favicon-->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+		<!-- Tag Viewport-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  		<title>Portal Professor | Faculdade Impacta Tecnologia</title>
+
+  		<style>
+  			.wrapper{
+  				display: grid;
+  				grid-template-columns: 40% 60%;
+  			}
+  			.tabelinha{
+  				 border: 0px transparent;
+}
+   		</style>
+</head>
+
+
+
+<body>
+
+	<nav>
+		<a href="index.html"><img src="img/logo.jpg" class="logo" alt=""></a>
+		<ul>
+			<li><a href="Home_prof.html">Área Do Professor</a></li>
+			<li><a href="Atividade.html">Atividades</a></li>
+			<li><a class="#servicos" href="cadastrarAluno.html">Cadastro Aluno</a></li>
+			<li><a class="btn-login" href="login.html">LOGIN</a></li>
+		</ul>
+	</nav><br>
+
+	<div class="wrapper" style="margin-left: 100px">
+		  <div>
+		  	<h1 style="margin-top: 50px; text-align: center;">Bem Vindo, Professor</h1> 
+		  	<table style="margin-top: 5%" class="tabelinha">
+		  		<thead>
+		  			<tr>
+		  				<th>Entrega AC</th>
+		  				<th>Status</th>
+		  				<th>Data de Envio de Notas</th>
+		  			</tr>
+		  		</thead>
+		  		<tbody>
+		  			<tr>
+		  				<td>Você Não Sabe</td>
+		  				<td>NEM EU</td>
+		  				<td></td>
+		  			</tr>
+		  			<tr>
+		  				<td colspan="2">Irineu</td>
+		  			</tr>
+		  		</tbody>
+		   	</table>     			
+      	  </div>
+      	  <div>
+      		 <h1 style="margin-left: 37%">Mensagens</h1>
+      		 <div style="background-color: grey; margin-right: 20px; margin-bottom: 20px;">
+      		 	<p style="text-align: center;">Nada a Declarar</p>
+      		 </div>
+      		 <DIV>
+      		 	<div class="wrapper" style="background-color: grey; margin-right: 20px; padding-top: 10px;">
+      		 		<div style="margin-left: 125px; margin-bottom: 10px;">
+      		 			<textarea placeholder="digite sua mensagem"  style="width: 500px; height: 200px; resize: none" wrap="off" cols="30" rows="5""></textarea><br>
+      		 			<button class="btn-login2" style="margin-left: 195px">Enviar</button> 
+       		 		</div>
+      		 	</div>
+      		 </DIV>
+
+      	  </div>
+      	</div>
+    </div>
+	<footer style="margin-top: 10%">
+		<p style="font-size: 12px;">Projeto LMS by Black Lotus, 2018</p>
+	</footer>
+
+</body>
+
+</html>
