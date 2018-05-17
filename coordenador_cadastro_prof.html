@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pacifico|Roboto+Slab:400,700" rel="stylesheet">
+  <!-- O normalize está em primeiro pela hierarquia, se estivesse em segundo algumas classes dele substituiriam a do estilo.css -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <!-- Definindo o Favicon-->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Tag Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Coordenador | Faculdade Impacta de Tecnologia</title>
+</head>
+<body>
+  <nav>
+          <a href="index.html"><img src="img/logo.jpg" class="logo" alt=""></a>
+          <ul>
+              <li><a href="GradeCursos.html">Coordenador</a></li>
+              <li><a class="btn-login" href="login.html">LOGIN</a></li>
+          </ul>
+      </nav>
+
+<section id="sobreTitulo">
+  <div class="center">
+
+    <h1>Cadastro de Professor</h1>
+    
+
+    <label for="">
+      <input type="text" class="campoCadastro" name="Nome_do_Professor" size="80" placeholder=" Nome do Professor">
+    </label>
+    <label for="">
+        <input type="text" id="idade" placeholder="Idade"class="campoCadastro">
+    </label>
+    <label for="">
+      <input type="text" class="campoCadastro" name="E-mail" size="80" placeholder="E-mail: email@web.com">
+    </label>
+    <label for="">
+      <input class="campoCadastroDDD" type="text" name="DDD" size="2" maxlength="2" placeholder="11"> - <input type="text" class="campoCadastrocel" name="num" size="9" maxlength="9" placeholder="Celular: 9 ---- ---- ">
+    </label>
+    <label for="">
+      <input type="text" class="campoCadastro" name="Formulario_Novo_Curso_email" size="80" placeholder="Nome do curso">
+    </label>
+    <label for="">
+      <input type="text" class="campoCadastro" name="num" size="9" maxlength="9" placeholder="Numero da Sala:">
+    </label>
+    <label for="">
+    <label >
+      <textarea class="campoCadastro" rows="10" placeholder="Observações para o professor" id="campoCadastro"></textarea>
+    </label>
+
+    <label for="">
+      <input type="submit" class="btn-login2" name="botao-ok" value="Enviar">
+    </label>
+
+  </div>
+</section>
+
+  <footer>
+    <p style="font-size: 12px;">Projeto LMS by Koala Soluções Tecnologias, 2018</p>
+  </footer>
+
+</body>
+</html>
