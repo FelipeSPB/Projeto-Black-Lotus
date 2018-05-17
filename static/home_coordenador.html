@@ -1,0 +1,88 @@
+<<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pacifico|Roboto+Slab:400,700" rel="stylesheet">
+		<!-- O normalize está em primeiro pela hierarquia, se estivesse em segundo algumas classes dele substituiriam a do estilo.css -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/estilo.css">
+		<!-- Definindo o Favicon-->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+		<!-- Tag Viewport-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  		<title>Portal Professor | Faculdade Impacta Tecnologia</title>
+
+  		<style>
+  			.wrapper{
+  				display: grid;
+  				grid-template-columns: 40% 60%;
+  			}
+  		</style>
+</head>
+
+
+
+<body>
+
+	<nav>
+		<a href="index.html"><img src="img/logo.jpg" class="logo" alt=""></a>
+		<ul>
+			<li><a href="home_.coordenador">Área Do Coordenador</a></li>
+            <li><a href="Atividades.html">Professores</a></li>
+            <li><a href="Atividades.html">Alunos</a></li>
+            <li><a class="#servicos" href="cadastrarAluno.html">Cadastro Curso</a></li>
+            <li><a class="#servicos" href="cadastrarAluno.html">Cadastro de Professor</a></li>
+			<li><a class="btn-login" href="login.html">LOGIN</a></li>
+		</ul>
+	</nav><br>
+
+	<div class="wrapper" style="margin-left: 100px">
+		  <div>
+		  	<h1 style="margin-top: 50px; text-align: center;">Bem Vindo, Coordenador!</h1> 
+		  	<table style="margin-top: 5%" class="tabelinha">
+		  		<thead>
+		  			<tr>
+		  				<th>Criar novo curso</th>
+		  				<th>Professores</th>
+		  				<th>Observações sobre o curso:</th>
+		  			</tr>
+		  		</thead>
+		  		<tbody>
+		  			<tr>
+		  				<td>MArio</td>
+		  				<td>que mario?</td>
+		  				<td>digite sua mensagem</td>
+		  			</tr>
+		  			<tr>
+		  				<td colspan="3">Koala Soluções Tecnologias</td>
+		  			</tr>
+		  		</tbody>
+		   	</table>     			
+      	  </div>
+      	  <div>
+      		 <h1 style="margin-left: 37%">Mensagens</h1>
+      		 <div style="background-color: grey; margin-right: 20px; margin-bottom: 20px;">
+      		 	<p style="text-align: center;">Nada a Declarar</p>
+      		 </div>
+      		 <DIV>
+      		 	<div class="wrapper" style="background-color: grey; margin-right: 20px; padding-top: 10px;">
+      		 		<div style="margin-left: 125px; margin-bottom: 10px;">
+      		 			<textarea placeholder="Digite Sua Mensagem" class="campo"  style="width: 500px; max-height: 200px; resize: none; text-align: center;" wrap="off" cols="30" rows="5""></textarea><br>
+      		 			<button class="btn-login2" style="margin-left: 195px">Enviar</button> 
+       		 		</div>
+      		 	</div>
+      		 </DIV>
+
+      	  </div>
+      	</div>
+    </div>
+	<footer style="margin-top: 10%">
+		<p style="font-size: 12px;">Projeto LMS by Koala Soluções Tecnologias, 2018</p>
+	</footer>
+
+</body>
+
+</html>
