@@ -1,0 +1,436 @@
+/*
+Geral
+Definindo os gerais do site ou seja, que irão ser sempre os mesmo.
+As fontes que contém aspas só são usados caso a fonte possua mais de
+um nome.
+*PODERIA SER CRIADO UMA CLASSE SECTION PARA ECONOMIZAR ALGUNS CÓDIGOS REPETIDOS
+*/
+
+body{
+	margin: 0;
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	color: #4d4d4d;
+}
+h1,h2,h3{
+	margin: 0;
+	font-family: "Roboto Slab",Helvetica,Arial,sans-serif;
+	font-weight: 700;
+}
+
+
+
+.botao{
+	color: #f1f1f1;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #2c345b;
+	font-size: .9em;
+	border-radius: 3px;
+}
+.botao:hover{
+	background-color: #FFF;
+	color: #000;
+}
+
+.logo{
+	width: 200px;
+}
+
+#tabela{
+  display: grid;
+  padding: 15px;
+}
+
+/*
+Navegação
+para evitar incompatibilidade com o navegador utilizar autoprefixer
+*/
+nav{
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	background-color: #FFF;
+
+}
+/*mudando estilo somente do "a" que pertence ao nav , ele seleciona todos os "a" que são filhos da tag nav*/
+nav > a{
+	text-decoration: none;
+	color:#000;
+	font-weight: 700;
+	font-size: 28px;
+	font-family: Pacifico,serif;
+}
+/*mudando o estilo da lista*/
+nav ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+
+}
+/*selecionando cada item dentro da lista */
+nav ul li{
+	width: 100%;
+	text-align: center;
+}
+
+/* alterando os links que estão dentro dos itens de lista dento da lista dentro da navegação*/
+nav ul li a{
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	/*color: #f1f1f1;*/
+	color: #000;
+}
+
+/* Deixando o cabeçalho com um sombra interativa com o movimento do mouse de um usuário */
+nav ul li a:hover{
+	color: #B0C4DE;
+}
+
+
+/*
+Cabeçalho
+*/
+header{
+	background-image: url('../img/fundo.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #f1f1f1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+header p{
+	margin-bottom: 1em;
+
+}
+/*
+Sobre da Página de Login.
+*/
+#sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align:center;
+	padding: 0 20px 20px;
+	background-color: #2c345b;
+	color:#f1f1f1;
+
+}
+#sobre p{
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+}
+
+#sobre .botao{
+	background-color: #f1f1f1;
+	color: #4d4d4d;
+}
+
+
+/*
+Serviços
+*/
+#servicos{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#servicos div{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+}
+
+/* Portfolio */
+
+#portfolio{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+
+}
+#portfolio h2{
+	margin-top: 20px;
+
+}
+
+
+/*
+Contato
+*/
+
+#contato{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+/*
+Footer
+*/
+footer{
+	text-align: center;
+	padding: 10px;
+	background-color: #4d4d4d;
+	color: #f1f1f1
+}
+
+/* Botão Login */
+
+#navegacao ul{
+  text-align: center;
+  margin: 0;
+	margin-top: 20px;
+	margin-right: 40px;
+}
+
+ #navegacao ul li{
+	 padding: 15px;
+   list-style-type: none;
+   background-color:#EDEDED;
+   border-radius: 10px;
+	 text-align: center;
+	 display: inline-block;
+}
+a { text-decoration: none;  }
+
+
+/* Padrão do Botão das Páginas*/
+
+.btn-login{
+	background-color: #2c345b;
+	color: #f1f1f1;
+	border-radius: 500px;
+	width: 100px;
+	height: 20px;
+}
+.btn-login:hover{
+	background-color: #2863cf;
+	color: #f1f1f1;
+	border-radius: 500px;
+	width: 100px;
+	height: 20px;
+}
+
+/* Cursos */
+.cursos{
+	width:350px;height:250px;
+}
+
+table{
+  border: 2px solid rgb(153, 153, 153);
+  border-radius: 5px;
+  background-color:#3d3d5c;
+}
+td{
+  border: 2px solid rgb(153, 153, 153);
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f5;
+}
+th{
+	color: rgb(201, 201, 201);
+}
+/*
+Media Queries
+*/
+
+@media screen and (min-width: 768px) {
+	/*
+	Navegação
+	*/
+	nav{
+		flex-direction: row;
+		justify-content: space-around;
+
+	}
+	nav ul{
+		flex-direction: row;
+		width: 70%;
+	}
+	/* Cabeçalho*/
+	header{
+		height: 600px;
+		height: 60vh;
+		justify-content: center;
+
+	}
+	/* Sobre*/
+	#sobre{
+		height: 250px;
+		height: 30vh;
+		text-align: center;
+		min-height: 250px;
+	}
+
+	#sobreTitulo{
+		text-align: center;
+		background-color: #f1f1f1;
+		padding: 30px;
+	}
+.buttonForm{
+	text-align: center;
+}
+
+	.center {
+		text-align: center;
+		display: grid;
+	}
+	.center h1{
+		padding-bottom: 30px;
+	}
+	.center h2{
+		padding-top: 50px;
+	}
+	/* Servicos */
+	#servicos {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	#servicos h2{
+		text-align: center;
+		width: 100%;
+	}
+	#servicos div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    /*Portfolio*/
+
+    #portfolio h2{
+    	width: 100%;
+    	text-align: center;
+    }
+
+
+
+    /*contato*/
+    #contato{
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	justify-content: space-around;
+    	max-width: 500px;
+    	margin: 0 auto;
+    }
+
+    #contato h2, #contato p{
+    	width: 100%;
+    }
+}
+
+
+.campo{
+	border-radius: 100px;
+	padding: 10px;
+}
+/*Criando estilo do botao tal */
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#formulario{
+	display: grid;
+	flex-flow: column;
+}
+
+}
+#margem{
+	margin-top: 2%
+}
+
+/*Botão da Página de Login*/
+
+.btn-login2{
+	background-color: #2c345b;
+	color: #f1f1f1;
+	border-radius: 500px;
+	width: 100px;
+	height: 50px;
+	margin-top: 7px;
+}
+
+#msg_contato{
+
+}
+
+/* Campo de Cadastro do DDD de telefone - Pag Formulário e Novo Curso*/
+.campoCadastroDDD{
+	margin-top: 2%;
+	border-radius: 20px;
+	padding: 15px;
+	width: 1.2%;
+}
+
+/* Campo de Cadastro do Celular */
+
+.campoCadastrocel{
+	margin-top: 2%;
+	border-radius: 20px;
+	padding: 15px;
+	width: 25%;
+}
+
+/* Campo de Campo de Texto Livre das Páginas de Cadastro */
+
+.campoCadastro{
+	margin-top: 2%;
+	border-radius: 20px;
+	padding: 15px;
+	width: 30%;
+}
+
+.container{
+	background-color: #f1f1f1;
+	padding: 30px;
+}
+
+/* Galeria de Imagens */
+.imgGallery{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 30px;
+	grid-row-gap: 30px;
+	margin-left: 15%;
+}
+
+.imgGallery img {
+	border-radius: 15px;
+}
+
+/* Deixando os textos das tabelas alinhadinhos */
+
+.texto_alinhado {
+	text-align: justify;
+}
+
+
+
