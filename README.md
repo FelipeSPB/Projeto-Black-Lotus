@@ -9,7 +9,7 @@ Bruno Cesar    ADS  1701500
 Fabiano Ferro  SI 1701561
 
 
-Felipe Soares  SI 1701472     
+Felipe Soares  ADS 1701472     
 
 
 Isaac Oliveira ADS  1701416   
