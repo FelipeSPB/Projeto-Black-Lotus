@@ -1,5 +1,5 @@
 # reserva-projeto_siteLMS
-**Integrantes:
+
 Matheus Ribeiro SI 1701097
 Bruno Cesar    ADS  1701500    
 Fabiano Ferro  SI 1701561
