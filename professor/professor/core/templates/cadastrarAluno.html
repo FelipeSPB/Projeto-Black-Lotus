@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pacifico|Roboto+Slab:400,700" rel="stylesheet">
+    <!-- O normalize está em primeiro pela hierarquia, se estivesse em segundo algumas classes dele substituiriam a do estilo.css -->
+      <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+      <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+    <!-- Definindo o Favicon-->
+        <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+        <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <!-- Tag Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/login.js" defer async charset="utf-8"></script>
+    <title>Cadastro de Alunos| Faculdade Impacta de Tecnologia</title>
+</head>
+<body>
+  <nav>
+    <a href="{% url 'professor' %} "><img src="{% static 'img/logo.jpg' %}" class="logo" alt=""></a>
+    <ul>
+      <li><a href="{% url 'professor' %}">Área Do Professor</a></li>
+      <li><a href="{% url 'Atividades' %}">Atividades</a></li>
+      <li><a class="#servicos" href="{% url 'matricula' %}">Cadastro Aluno</a></li>
+      <li><a class="btn-login" href="login.html">LOGIN</a></li>
+    </ul>
+  </nav><br>
+
+<section id="sobreTitulo">
+  <div class="center">
+
+    <h1>Cadastro de Novos Alunos </h1>
+
+    <form id="formulario" action="/recebe" method="POST">
+        <label for="">
+          <input type="text" id="nome" placeholder="Nome"class="campoCadastro">
+        </label>
+
+        <label for="">
+          <input type="text" id="idade" placeholder="Idade"class="campoCadastro">
+        </label>
+
+        <label for="">
+          <input type="text"id="curso"placeholder="Curso"class="campoCadastro">
+        </label>
+
+        <label for "">
+          <input type="text" id="celular" placeholder="Celular"class="campoCadastro">
+        </label>
+
+        <label for="">
+          <input type="e-mail"id="email"placeholder="E-Mail"class="campoCadastro">
+        </label>
+
+
+        <label for="">
+          <input type="submit" class="btn-login2"  value="Enviar">
+        </label>
+    </form>
+  </div>
+</section>
+  <footer>
+    <p style="font-size: 12px;">Projeto LMS by Black Lotus, 2018</p>
+  </footer>
+</body>
+</html>
